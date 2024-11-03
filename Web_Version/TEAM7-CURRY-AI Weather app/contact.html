@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='contact.css' rel='stylesheet' type='text/css'>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xl-8 offset-xl-2 py-5">
+      <h1>Contact form</h1>
+      <p class="lead">This is for you to contact us developers if any support needed</p>
+      <form id="contact-form" method="post" action="send-mail.php">
+        <div class="messages"></div>
+        <div class="controls">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="form_name">Name *</label>
+                <input id="form_name" type="text" name="name" class="form-control" required="required" data-error="El nombre es obligatorio.">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="form_email">Email *</label>
+                <input id="form_email" type="email" name="email" class="form-control" required="required" data-error="El email es obligatorio.">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="form_message">Message *</label>
+                <textarea id="form_message" name="message" class="form-control" rows="4" required="required" data-error="Por favor, escribe un mensaje."></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <input type="submit" class="btn btn-success btn-send" value="Submit">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p class="text-muted"><strong>*</strong> This fields are obligatory.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+                <p class="lead">Team members</p>
+                <ul>
+                    <li>Baizhan Khassenov: baizhan.khassenov@ue-germany.de</li>
+                    <li>Yeskendir Dauren: yeskendir.dauren@ue-germany.de</li>
+                    <li>Anelya Adakhayeva: anelya.adakhayeva@ue-germany.de</li>
+                    <li>Anu: anu@ue-germany.de</li>
+                    <li>Nadi Kyaw: nadi.kyaw@ue-germany.de</li>
+                    <li>Luis Arguello: luis.arguello@ue-germany.de</li>
+                    <li>Jairo Rodelo: jairo.rodelo@ue-germany.de</li>
+                    <li>Parvathy Arun: parvathy.arun@ue-germany.de</li>
+                    <li>Sebastian Albahaca: sebastian.albahaca@ue-germany.de</li>
+                    <li>Almaz Arynov: almaz.arynov@ue-germany.de</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241qDjO/5Rgx4iKT7Y9q0s8c6W6+28" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.1.1/validator.min.js" integrity="sha512-a85O8ULeOhB1V4mLCxKjhI1FddeawOMQ9vOJm+FT7qP6gN6j5UwW6iCxjIC3XtzxCVQAVc34OV4fYJKDWkHesA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="contact.js"></script>
+</body>
+</html>
